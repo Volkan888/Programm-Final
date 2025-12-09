@@ -1,0 +1,15 @@
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\bin\Release\net10.0\Programm Final.exe
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\bin\Release\net10.0\Programm Final.deps.json
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\bin\Release\net10.0\Programm Final.runtimeconfig.json
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\bin\Release\net10.0\Programm Final.dll
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\bin\Release\net10.0\Programm Final.pdb
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.AssemblyInfoInputs.cache
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.AssemblyInfo.cs
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.csproj.CoreCompileInputs.cache
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.sourcelink.json
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.dll
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\refint\Programm Final.dll
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.pdb
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\Programm Final.genruntimeconfig.cache
+C:\Users\Ali4a\source\repos\Programm-Final\Programm Final\obj\Release\net10.0\ref\Programm Final.dll
