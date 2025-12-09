@@ -6,7 +6,7 @@ using System.Collections.Generic;  // Für List<T>
 using System.Diagnostics;          // Für Process.Start (Notepad)
 using System.Globalization;        // Für deutsches Datums-/Zahlformat
 using System.IO;                   // Für Dateioperationen
-using System.Linq;                // Für LINQ (OrderBy, Where, usw.)
+using System.Linq;                 // Für LINQ (OrderBy, Where, usw.)
 using System.Text.Json;            // Für JSON-Speicherung
 
 // ===============================
@@ -36,8 +36,8 @@ class Kunde                              // Klasse für Kunde
 
 class Artikel                            // Klasse für Artikel
 {
-    public int Id { get; set; }          // Laufende Artikel-ID
-    public string ArtikelNummer { get; set; } = ""; // Artikelnummer (automatisch nach Id)
+    public int Id { get; set; }                  // Laufende Artikel-ID
+    public string ArtikelNummer { get; set; } = ""; // Automatische Artikelnummer
     public string Bezeichnung { get; set; } = "";   // Name des Artikels
     public decimal Preis { get; set; }             // Verkaufspreis
     public int Bestand { get; set; }               // Stück im Lager
@@ -455,16 +455,22 @@ class Program                            // Hauptklasse
         }
     }
 
+    // Automatische Artikelnummer generieren (A0001, A0002, ...)
+    static string GeneriereArtikelNummer(int id)
+    {
+        return "A" + id.ToString("D4");  // D4 = immer 4 Stellen, mit führenden Nullen
+    }
+
     static void ArtikelNeu()            // Artikel anlegen
     {
         Console.Clear();                // Bildschirm
         Console.WriteLine("==== NEUER ARTIKEL ====\n"); // Überschrift
 
         Artikel a = new Artikel();      // Neues Artikelobjekt
-        a.Id = artikelID++;             // ID setzen
-        a.ArtikelNummer = a.Id.ToString(); // Artikelnummer automatisch nach Id
+        a.Id = artikelID++;                             // ID setzen
+        a.ArtikelNummer = GeneriereArtikelNummer(a.Id); // Auto-Artikelnummer
 
-        Console.WriteLine($"Automatisch zugewiesene Artikelnummer: {a.ArtikelNummer}"); // Info
+        Console.WriteLine($"Automatisch vergebene Artikelnummer: {a.ArtikelNummer}");
 
         Console.Write("Bezeichnung: ");           // Eingabe
         a.Bezeichnung = TextEin("Name fehlt");    // Lesen
